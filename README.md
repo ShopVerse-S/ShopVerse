@@ -18,7 +18,7 @@ A Full-Stack E-Commerce Project developed using Angular as Frontend, Spring Boot
 - Checkout form with validation
 - Purchase - save order details to database
 - Orders history
-- Login/Logout - Secured Authentication and Authorization via Okta-OIDC-Oauth2
+- Login/Logout - Secured Authentication and user login with DB
 - Protected 'Member' page, only for logged in users
 - Secured Rest API endpoints with Okta-jwt
 - HTTPS enabled for backend and frontend
