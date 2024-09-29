@@ -1,0 +1,17 @@
+
+
+.btn btn-sm btn-dark {
+      position: relative;
+      right: 0;
+      min-width: 95px;
+      color: #fff;
+      border: 10px solid #0000FF;
+      -webkit-border-radius: 3px;
+      -moz-border-radius: 3px;
+      border-radius: 43px;
+      background-color: blue;
+}
+.btn btn-sm btn-dark:active {
+    background: #000; /* Background color when active (clicked) */
+    border: 10px solid #000; /* Border color when active */
+ }

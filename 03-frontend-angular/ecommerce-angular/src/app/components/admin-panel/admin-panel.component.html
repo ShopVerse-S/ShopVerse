@@ -1,0 +1,9 @@
+<div *ngIf="isAdminPage()">
+
+</div>
+
+<div class="admin-panel">
+  <h2>Admin Panel</h2>
+          <button (click)="goToUserManagement()" class="security-btn">User Management</button>
+          <button (click)="goToProductManagement()" class="security-btn">Product Management</button>
+</div>

@@ -1,0 +1,21 @@
+<div class="user-profile-container">
+  <h2>User Profile</h2>
+  <div>
+    <label for="username">Username:</label>
+    <input type="text" id="username" [(ngModel)]="user.username" disabled>
+  </div>
+  <div>
+    <label for="email">Email:</label>
+    <input type="email" id="email" [(ngModel)]="user.email" disabled>
+  </div>
+  <div>
+    <label for="address">Address:</label>
+    <input type="text" id="address" [(ngModel)]="user.address" [disabled]="!isEditing">
+  </div>
+  <div>
+    <label for="mobile">Mobile Number:</label>
+    <input type="text" id="mobile" [(ngModel)]="user.mobile" [disabled]="!isEditing">
+  </div>
+
+  <button (click)="toggleEdit()">{{ isEditing ? 'Save Changes' : 'Edit' }}</button>
+</div>

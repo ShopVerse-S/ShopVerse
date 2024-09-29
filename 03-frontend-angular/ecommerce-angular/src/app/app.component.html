@@ -1,0 +1,49 @@
+<div class="page-wrapper bg-light">
+  <!-- MENU SIDEBAR-->
+  <aside class="menu-sidebar d-none d-lg-block" style="background-color: white;">
+    <div class="logo">
+      <a routerLink="/products">
+        <img bg-light src="assets/images/logo.png" alt="shop" class="img-responsive" height="50" width="50">
+      </a>
+    </div>
+    <!-- Conditionally render the product category menu only if `showProductCategoryMenu` is true -->
+    <app-product-category-menu *ngIf="showProductCategoryMenu"></app-product-category-menu>
+
+
+  </aside>
+  <!-- END MENU SIDEBAR-->
+  <!-- PAGE CONTAINER-->
+  <div class="page-container bg-light">
+    <!-- HEADER DESKTOP-->
+    <header class="header-desktop" style="background-color: white;">
+      <div class="section-content section-content-p30">
+        <div class="container-fluid">
+          <div class="header-wrap">
+            <!-- Conditionally render search bar, login status, and cart status -->
+
+            <app-search *ngIf="!isLoginPage && !isAdminPage()"></app-search>
+            <app-login-status *ngIf="!isLoginPage"></app-login-status>
+            <app-cart-status *ngIf="!isLoginPage"></app-cart-status>
+
+
+
+          </div>
+          <div class="account-wrap"></div>
+        </div>
+      </div>
+    </header>
+    <!-- END HEADER DESKTOP-->
+
+    <!-- MAIN CONTENT-->
+    <router-outlet></router-outlet>
+  </div>
+</div>
+
+<!-- END PAGE CONTAINER-->
+<footer>
+  <ul>
+    <li><a href="#">About Us</a></li>
+    <li><a href="#">Contact Us</a></li>
+    <li><a href="#">Help</a></li>
+  </ul>
+</footer>

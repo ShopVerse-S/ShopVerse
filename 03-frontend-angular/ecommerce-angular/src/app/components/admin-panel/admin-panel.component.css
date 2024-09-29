@@ -1,0 +1,27 @@
+.admin-panel {
+  padding: 20px;
+  background-color: #f1f1f1;
+  border-radius: 5px;
+}
+
+.admin-panel h2 {
+  margin-bottom: 50px;
+}
+
+.admin-panel button {
+  margin-right: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+.security-btn {
+    position: relative;
+    right: 0;
+    min-width: 95px;
+    color: #fff;
+    border: 10px solid #000;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 43px;
+    background: #000
+}
