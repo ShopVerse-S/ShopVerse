@@ -1,4 +1,4 @@
-# My E-Commerce Shop
+# ShopVerse
 
 A Full-Stack E-Commerce Project developed using Angular as Frontend, Spring Boot as Backend, and MySQL as Database.
 
@@ -18,7 +18,7 @@ A Full-Stack E-Commerce Project developed using Angular as Frontend, Spring Boot
 - Checkout form with validation
 - Purchase - save order details to database
 - Orders history
-- Login/Logout - Secured Authentication and user login with DB
+- Login/Logout - Secured Authentication and user login, forgot password and signup form,
 - Protected 'Member' page, only for logged in users
 - Secured Rest API endpoints with Okta-jwt
 - HTTPS enabled for backend and frontend
